@@ -1,0 +1,250 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5AAD06A004981D7DA795E7AD /* SonaraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8E4D7999BA5097390D34A /* SonaraApp.swift */; };
+		5770203B72433880F043FD49 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CD4B03DD0C0330DE86020E /* Models.swift */; };
+		010A1717B1853D0CE9EC0F84 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4866C027594DB806CDFFB7 /* Theme.swift */; };
+		0CE7233A02FA880D00D552C9 /* EQSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8ABFCD2B84CA7B93CCA2D /* EQSettings.swift */; };
+		DF323D7928EC799CCDD89475 /* LibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ADFAB56C9B7EA84FB3A249 /* LibraryService.swift */; };
+		5D93B9C57DB0E50747E8DBC1 /* PlayerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097A7A4859DDB47CCBAA9191 /* PlayerEngine.swift */; };
+		B133C7DCAE14EBEA8FD8CE41 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23327E1FB76197B3BEF73834 /* RootView.swift */; };
+		7B164F27E149E2BA496875D8 /* LibraryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F30A3FE519C876D5F9D4B3A /* LibraryViews.swift */; };
+		FD4EA1D7C9368D71630FE3FF /* PlayerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF891A3D1F176E1EB45ECF6 /* PlayerViews.swift */; };
+		D2FAEA823944BD9DE67C8661 /* PlaylistViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1008F9392D14CC88C6AE82A8 /* PlaylistViews.swift */; };
+		20DDA1EF970C365A16F71374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75046E84DAE53AA83B440071 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DDD8E4D7999BA5097390D34A /* SonaraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonaraApp.swift; sourceTree = "<group>"; };
+		88CD4B03DD0C0330DE86020E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		9D4866C027594DB806CDFFB7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F6D8ABFCD2B84CA7B93CCA2D /* EQSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EQSettings.swift; sourceTree = "<group>"; };
+		46ADFAB56C9B7EA84FB3A249 /* LibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryService.swift; sourceTree = "<group>"; };
+		097A7A4859DDB47CCBAA9191 /* PlayerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerEngine.swift; sourceTree = "<group>"; };
+		23327E1FB76197B3BEF73834 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		7F30A3FE519C876D5F9D4B3A /* LibraryViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViews.swift; sourceTree = "<group>"; };
+		EDF891A3D1F176E1EB45ECF6 /* PlayerViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViews.swift; sourceTree = "<group>"; };
+		1008F9392D14CC88C6AE82A8 /* PlaylistViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViews.swift; sourceTree = "<group>"; };
+		75046E84DAE53AA83B440071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E3C67AF82295810685546EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		267DC943979B98CA02F3AF3A /* Sonara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sonara.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09A82846EB709A06A7813A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A9E7ECAD1E41B9097B2C9DC = {
+			isa = PBXGroup;
+			children = (
+				0FE3C73F02347A26360D82EF /* Sonara */,
+				4688211A81A62493654CF8D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4688211A81A62493654CF8D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				267DC943979B98CA02F3AF3A /* Sonara.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FE3C73F02347A26360D82EF /* Sonara */ = {
+			isa = PBXGroup;
+			children = (
+				DDD8E4D7999BA5097390D34A /* SonaraApp.swift */,
+				88CD4B03DD0C0330DE86020E /* Models.swift */,
+				9D4866C027594DB806CDFFB7 /* Theme.swift */,
+				F6D8ABFCD2B84CA7B93CCA2D /* EQSettings.swift */,
+				46ADFAB56C9B7EA84FB3A249 /* LibraryService.swift */,
+				097A7A4859DDB47CCBAA9191 /* PlayerEngine.swift */,
+				23327E1FB76197B3BEF73834 /* RootView.swift */,
+				7F30A3FE519C876D5F9D4B3A /* LibraryViews.swift */,
+				EDF891A3D1F176E1EB45ECF6 /* PlayerViews.swift */,
+				1008F9392D14CC88C6AE82A8 /* PlaylistViews.swift */,
+				75046E84DAE53AA83B440071 /* Assets.xcassets */,
+				1E3C67AF82295810685546EC /* Info.plist */,
+			);
+			path = Sonara;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42AEFBAE01D2DFD981F7DA7D /* Sonara */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8515020863B87858A5070ED2 /* Build configuration list for PBXNativeTarget "Sonara" */;
+			buildPhases = (
+				838248CAA0E23712048A3C4E /* Sources */,
+				09A82846EB709A06A7813A7E /* Frameworks */,
+				B38B8EFCFFAEB0E290034F10 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = Sonara;
+			productName = Sonara;
+			productReference = 267DC943979B98CA02F3AF3A /* Sonara.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					42AEFBAE01D2DFD981F7DA7D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 52354ECD683353BEC59227CD /* Build configuration list for PBXProject "Sonara" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A9E7ECAD1E41B9097B2C9DC;
+			productRefGroup = 4688211A81A62493654CF8D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42AEFBAE01D2DFD981F7DA7D /* Sonara */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B38B8EFCFFAEB0E290034F10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20DDA1EF970C365A16F71374 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		838248CAA0E23712048A3C4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 4294967295;
+			files = (
+				5AAD06A004981D7DA795E7AD /* SonaraApp.swift in Sources */,
+				5770203B72433880F043FD49 /* Models.swift in Sources */,
+				010A1717B1853D0CE9EC0F84 /* Theme.swift in Sources */,
+				0CE7233A02FA880D00D552C9 /* EQSettings.swift in Sources */,
+				DF323D7928EC799CCDD89475 /* LibraryService.swift in Sources */,
+				5D93B9C57DB0E50747E8DBC1 /* PlayerEngine.swift in Sources */,
+				B133C7DCAE14EBEA8FD8CE41 /* RootView.swift in Sources */,
+				7B164F27E149E2BA496875D8 /* LibraryViews.swift in Sources */,
+				FD4EA1D7C9368D71630FE3FF /* PlayerViews.swift in Sources */,
+				D2FAEA823944BD9DE67C8661 /* PlaylistViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9A1BE53E6D97C09FC035EDB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AADBA534EAE7283237EB0709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D4EF3E330D5970F5C846DF39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sonara/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xel.sonara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMBED_LIBRARIES = YES;
+			};
+			name = Debug;
+		};
+		090E82D3831CA0A8320821FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sonara/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xel.sonara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMBED_LIBRARIES = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52354ECD683353BEC59227CD /* Build configuration list for PBXProject "Sonara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A1BE53E6D97C09FC035EDB4 /* Debug */,
+				AADBA534EAE7283237EB0709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8515020863B87858A5070ED2 /* Build configuration list for PBXNativeTarget "Sonara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4EF3E330D5970F5C846DF39 /* Debug */,
+				090E82D3831CA0A8320821FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}

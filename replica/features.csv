@@ -1,0 +1,33 @@
+feature,area,priority,original,clone,notes
+First-run permission explainer & grant flow,onboarding,must,yes,yes,"iOS: bukan storage permission, melainkan pilihan folder/impor/Media Library"
+Scan local music files into library,library,must,yes,yes,Android scan total; iOS via folder bookmark + impor sandbox + Media Library query
+Browse by Songs,library,must,yes,yes,
+Browse by Albums,library,must,yes,yes,View turunan dari metadata track
+Browse by Folders,library,must,yes,yes,Mengikuti folder yang dipilih/diimpor user
+Search across local library,library,must,yes,yes,
+Offline playback MP3/WAV/AAC/M4A,playback,must,yes,yes,AVFoundation native
+Offline playback FLAC,playback,must,yes,partial,"Perlu decoder tambahan (mis. FFmpegKit/VLCKit) - AVFoundation terbatas | Implemented in source, approximation — see build-log.md"
+Now Playing screen with seek/shuffle/repeat,playback,must,yes,yes,
+Background playback + lock screen / Control Center controls,playback,must,yes,yes,AVAudioSession + MPRemoteCommandCenter + NowPlayingInfo
+Bluetooth & speaker output support,playback,must,yes,yes,Rute output sistem iOS
+Equalizer with genre presets (Classical/Jazz/Rock/Pop/Hip-Hop/Heavy Metal),sound,must,yes,yes,AVAudioUnitEQ multi-band
+Custom EQ sliders,sound,must,yes,yes,
+Unlimited playlists - create/rename/delete,playlists,must,yes,yes,
+Drag-and-drop playlist reordering,playlists,must,yes,yes,
+Add track to playlist via long press,playlists,must,yes,yes,
+Smart list - Favorites (Liked Songs),playlists,must,yes,yes,
+Smart list - Most Played,playlists,must,yes,yes,Butuh playCount
+Smart list - Recently Added,playlists,must,yes,yes,Butuh dateAdded
+Bass boost,sound,should,yes,partial,"Di iOS: low-shelf EQ gain - mirip, bukan identik dengan API Android | Implemented in source, approximation — see build-log.md"
+Reverb,sound,should,yes,yes,AVAudioUnitReverb
+Virtualiser / stereo widening,sound,should,yes,partial,"DSP custom - hasil mendekati bukan sama persis | Implemented in source, approximation — see build-log.md"
+Audio visualizers on Now Playing,visuals,should,yes,partial,"FFT dari audio tap -> Metal/Canvas | Implemented in source, approximation — see build-log.md"
+Queue / Up Next view,playback,should,yes,yes,Confidence medium dari recon
+Rescan library manually,library,should,yes,yes,
+Sleep timer,playback,could,no,yes,Tidak disebut di situs asli - tambahan opsional bukan clone
+3D themes for player screen,visuals,could,yes,yes,Rincian tema asli tidak terdokumentasi publik
+Gapless playback / crossfade,playback,could,no,yes,Tidak disebut di situs asli
+CarPlay support,playback,could,no,yes,Padanan iOS untuk pengalaman di mobil - opsional
+Android-style full-storage auto scan,library,skip,yes,skip,Tidak diizinkan sandbox iOS - diganti folder picker + impor
+Original name/logo/copy (Auralys branding),brand,skip,yes,skip,Milik developer asli - wajib rebrand sebelum rilis
+APK binary reuse / direct conversion,platform,skip,yes,skip,Secara teknis mustahil di iOS - rebuild clean-room
