@@ -145,9 +145,10 @@ final class LibraryService: ObservableObject {
         var files: [URL] = []
         if let enumerator = FileManager.default.enumerator(at: folder, includingPropertiesForKeys: [.fileSizeKey],
                                                            options: [.skipsHiddenFiles]) {
-            for case let file as URL in enumerator where Self.audioExtensions.contains(file.pathExtension.lowercased()) {
-                files.append(file)
-            }
+            // allObjects, not async iteration: FileManager's iterator is
+            // unavailable from async contexts (Swift 6 error).
+            let all = (enumerator.allObjects as? [URL]) ?? []
+            files = all.filter { Self.audioExtensions.contains($0.pathExtension.lowercased()) }
         }
         for (index, file) in files.enumerated() {
             scanProgress = Double(index + 1) / Double(max(files.count, 1))
@@ -208,7 +209,8 @@ final class LibraryService: ObservableObject {
             guard item.assetURL != nil, !item.hasProtectedAsset else { continue }
             let pid = item.persistentID
             let descriptor = FetchDescriptor<Track>(predicate: #Predicate { $0.mediaPersistentID == pid })
-            if let existing = try? context.fetch(descriptor).first, existing != nil { continue }
+            let alreadyImported = (try? context.fetch(descriptor)) ?? []
+            if !alreadyImported.isEmpty { continue }
             let track = Track(title: item.title ?? "Unknown Title", source: .mediaLibrary, filePath: "")
             track.mediaPersistentID = pid
             track.artist = item.artist
@@ -231,8 +233,8 @@ final class LibraryService: ObservableObject {
     private func upsert(fileURL: URL, source: TrackSource, storedPath: String,
                         bookmarkID: UUID?, context: ModelContext) async {
         let descriptor = FetchDescriptor<Track>(predicate: #Predicate { $0.filePath == storedPath })
-        if let existing = try? context.fetch(descriptor).first,
-           let found = existing, found.folderBookmarkID == bookmarkID {
+        let matches = (try? context.fetch(descriptor)) ?? []
+        if let found = matches.first(where: { $0.folderBookmarkID == bookmarkID }) {
             found.isMissing = false
             return
         }
