@@ -49,7 +49,7 @@ final class PlayerEngine: ObservableObject {
             band.frequency = Float(EQSettings.bandFrequencies[index])
             band.bandwidth = 1.0
             band.filterType = .parametric
-            band.isBypassed = false
+            band.bypass = false
         }
         reverb.loadFactoryPreset(.mediumHall)
         reverb.wetDryMix = 0
